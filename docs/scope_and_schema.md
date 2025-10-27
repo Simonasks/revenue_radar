@@ -180,14 +180,16 @@ Used to measure customer loyalty and retention.
 
 ```mermaid
 erDiagram
-  dim_date ||--o{ fct_orders : "order_date_sk"
-  dim_date ||--o{ fct_order_items : "order_date_sk"
-  dim_customers ||--o{ fct_orders : "customer_sk"
-  dim_customers ||--o{ fct_order_items : "customer_sk"
-  dim_products ||--o{ fct_order_items : "product_sk"
-  dim_channel ||--o{ fct_orders : "channel_sk"
-  dim_promo ||--o{ fct_orders : "promo_sk"
-  fct_orders ||--o{ fct_order_items : "order_sk"
+  dim_date ||--o{ fct_orders : order_date_sk
+  dim_date ||--o{ fct_order_items : order_date_sk
+  dim_customers ||--o{ fct_orders : customer_sk
+  dim_customers ||--o{ fct_order_items : customer_sk
+  dim_products ||--o{ fct_order_items : product_sk
+  dim_channel ||--o{ fct_orders : channel_sk
+  dim_promo ||--o{ fct_orders : promo_sk
+  fct_orders ||--o{ fct_order_items : order_sk
+```
+
 
   ## Data Contract (v1)
 
