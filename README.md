@@ -1,6 +1,6 @@
 # Revenue Radar
 
-Welcome to my 30-day data engineering project in Databricks. 
+Welcome to my 30-day project to learn data engineering in Databricks. 
 
 See my full day-by-day reflections here: [docs/learning_journal.md](docs/learning_journal.md)
 
